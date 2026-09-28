@@ -4,38 +4,42 @@
 This project implements a Convolutional Neural Network (CNN) model to classify images of different scenes. The model is trained on a dataset of labeled scene images and aims to accurately categorize images into their respective scene classes.
 
 ## Features
-- Image preprocessing and augmentation
-- Implementation of CNN architecture for image classification
-- Training and validation of the model
-- Evaluation and prediction on new images
+- **Data Pipeline:** Efficient image preprocessing and augmentation.
+- **Model Architecture:** Custom CNN architecture optimized for spatial feature extraction.
+- **Evaluation:** Training and validation scripts with comprehensive performance tracking.
+- **Prediction:** Simple interface to classify new, unseen images.
 
 ## Dataset
-The dataset consists of various labeled scene images. (Please specify the dataset source or provide a link if applicable.)
+- **Source:** [Insert Dataset Name or Source, e.g., Kaggle Dataset]
+- **Details:** The model was trained on [Number of images] images across [Number of classes] categories.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ks-tejaskumar/Scene-Image-Classification-CNN-.git
+   git clone [Insert your repository link here]
    cd Scene-Image-Classification-CNN-
-Create and activate a virtual environment (optional but recommended):
+
+## Create and activate a virtual environment:
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install the required dependencies:
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+## Install dependencies:
 pip install -r requirements.txt
-Usage
-Prepare the dataset (if not included).
-Run the training script:
+
+## Usage:
+### Train the model:
 python train.py
-Evaluate the model:
+
+### Evaluate performance:
 python evaluate.py
-Use the model to predict the scene class of new images:
-python predict.py --image_path path/to/image.jpg
-Model Architecture
-The model uses a Convolutional Neural Network (CNN) architecture, which is highly effective for image data. It extracts spatial features through convolutional layers to classify scene images accurately.
 
-Results
-(Include accuracy, precision, recall, F1-score, or other relevant metrics here if available.)
+### Predict scene class for a new image:
+python predict.py --image_path path/to/your/image.jpg
 
-Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
+## Results:
+Accuracy: 95.36% (training), 57.67% (validation, final epoch)
+Key Findings: The CNN model classifies images into three categories: buildings, forest, and sea. The model shows signs of overfitting, with high training accuracy but volatile and generally low validation accuracy, indicating challenges in generalizing to unseen data.
+
+## Contributing:
+Contributions are welcome! Please fork this repository and create a pull request with your improvements.
