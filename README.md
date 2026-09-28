@@ -28,13 +28,13 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 ## Usage:
-### Train the model:
+1. Train the model:
 python train.py
 
-### Evaluate performance:
+2. Evaluate performance:
 python evaluate.py
 
-### Predict scene class for a new image:
+3. Predict scene class for a new image:
 python predict.py --image_path path/to/your/image.jpg
 
 ## Results:
